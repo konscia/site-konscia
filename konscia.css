@@ -1,73 +1,55 @@
+html {
+    height: 100%;
+}
+
 body {
     color: #444;
-    font-family: "arial";
-    background: #fff;
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #e5e2e8;
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
+    max-height: 100%;
+    animation: minha-animacao 6s alternate infinite;
+
 }
 
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-a {
-    color: #2594A3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    width: 800px;
-    margin: auto;
+@keyframes minha-animacao {
+    from {
+        background-color: #e0e1e8;
+    }
+    to {
+        background-color: #e8e6c0;
+    }
 }
 
 header {
-    margin: 10px;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px dashed #ccc;
+    margin-top: 180px;
 }
 
-header h1 {
-    font-size: 80px;
-    letter-spacing: 6px;
+h1 {
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+    font-weight: normal;
 }
 
-header h2 {
-    font-size: 32px;
-    letter-spacing: 2px;
+.services {
+    font-size: 19px;
 }
 
-header h3 {
-    font-size: 17px;
-    letter-spacing: 2px;
+.services a, .services a:active, .services a:visited {
+    text-decoration: none;
+    color: #777;
 }
 
-h2 {
-    color: #236467;
-    margin-bottom: 5px;
-    font-size: 24px;
-    letter-spacing: 2px;
+.services a:hover {
+    color: #444;
+    transition: color 0.4s;
 }
 
-section, footer{
-    margin-top: 20px;
-}
 
-.ks-color-1 { color: #882D61; }
-.ks-color-2 { color: #E0802E; }
-.ks-color-3 { color: #596C32; }
-.ks-color-4 { color: #236467; }
+
+.services span {
+    padding: 0 10px 0 10px;
+}
