@@ -1,55 +1,72 @@
 html {
     height: 100%;
+    background: url(img/floripa-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
 }
 
-body {
+header {
     color: #444;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #e5e2e8;
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.2));
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(230,230,230,0.7);
     max-height: 100%;
+    padding: 80px;
     animation: minha-animacao 6s alternate infinite;
-
+    margin-top: 20vh;
 }
 
 @keyframes minha-animacao {
     from {
-        background-color: #e0e1e8;
+        background-color: rgba(210,230,230,0.7);
     }
     to {
-        background-color: #e8e6c0;
+        background-color: rgba(230,230,190,0.7);
     }
 }
 
-header {
-    margin-top: 180px;
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    text-shadow: 1px 1px #444;
 }
 
-h1 {
-    font-size: 72px;
+footer a {
+    color: paleturquoise;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
     margin: 0;
     padding: 0;
-    letter-spacing: -1px;
     font-weight: normal;
 }
 
-.services {
+h1 {
+    font-size: 77px;
+    letter-spacing: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #aaa;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+
+h3 {
     font-size: 19px;
-}
-
-.services a, .services a:active, .services a:visited {
-    text-decoration: none;
-    color: #777;
-}
-
-.services a:hover {
-    color: #444;
-    transition: color 0.4s;
-}
-
-
-
-.services span {
-    padding: 0 10px 0 10px;
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
 }
