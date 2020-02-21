@@ -6,6 +6,8 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -40,7 +42,7 @@ address {
   line-height: 1.47em;
 }
 
-section, header, footer {
+section, header {
   margin: 80px 0 40px 0;
 }
 
@@ -94,4 +96,19 @@ section#k-clients figure {
 section#k-clients figure img {
   max-height: 100%;
   max-width: 100%;
+}
+
+hr {
+  border: 0;
+  margin: 10px 0;
+  height: 7px;
+  background: rgb(254,154,61);
+  background: linear-gradient(90deg, rgba(254,154,61,1) 0%, rgba(116,39,71,1) 33%, rgba(56,118,29,1) 66%, rgba(11,83,148,1) 100%);
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 7px solid rgb(8, 69, 122);
+  background: rgba(11,83,148,1);
+  color: white;
 }
