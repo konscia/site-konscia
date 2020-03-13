@@ -1,3 +1,8 @@
+h1 {
+  text-align: center;
+  font-size: 57px;
+}
+
 .k-img {
   float: none;
   margin: 0 auto 40px auto;
@@ -10,4 +15,16 @@
 
 section#k-superpowers article, section#k-partners article {
   width: 100%;
+}
+
+section#k-partners figure {
+  display: block;
+  float: none;
+  text-align: center;
+  width: calc(100% - 10vw);
+  min-height: auto;
+}
+
+section#k-partners figure img {
+  max-width: 200px;
 }

@@ -29,12 +29,16 @@ h2 {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: -1px;
+  margin-bottom: 5px;
 }
 
-h2 small {
+h2 + small {
   letter-spacing: 1px;
   font-size: 11px;
   font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 40px;
+  display: block;
 }
 
 h3 {
@@ -63,7 +67,7 @@ section#k-superpowers, section#k-partners, footer {
 .container {
   max-width: 920px;
   margin: auto;
-  padding: 0 10vw 0 5vw;
+  padding: 0 5vw 0 5vw;
 }
 
 .flex {
@@ -75,7 +79,6 @@ section#k-superpowers, section#k-partners, footer {
 
 .flex article {
   flex-grow: 1;
-  padding: 10px;
 }
 
 /* ELEMENTS */
@@ -105,17 +108,74 @@ section#k-superpowers article {
 }
 
 section#k-partners article {
-  width: calc(33% - 20px);
+  width: 100%;
+  padding: 20px 0;
+}
+
+section#k-partners article h3 {
+  color: white;
+  text-align: left;
+}
+
+section#k-partners article p {
+  color: white;
+  text-align: left;
 }
 
 section#k-partners figure {
-  height: 160px;
-  line-height: 160px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  float: left;
+  height: 100%;
+  width: 230px;
+  min-height: 160px;
+  line-height: 100%;
 }
 
 section#k-partners figure img {
   max-height: 100%;
   max-width: 100%;
+}
+
+article.k-datapedia {
+  background-color: #31343D;
+}
+
+article.k-datapedia a {
+  color: #00A19B;
+}
+
+article.k-vios {
+  background-color: #dce6f8;
+  color: #444344;
+}
+
+article.k-vios h3 {
+  color: #444344 !important;
+}
+
+article.k-vios p {
+  color: #444344 !important;
+}
+
+article.k-vios a {
+  color: #0b72cd;
+}
+
+article.k-humancode {
+  background-color: white;
+}
+
+article.k-humancode h3 {
+  color: #F06D61 !important;
+}
+
+article.k-humancode p {
+  color: #444344 !important;
+}
+
+article.k-humancode a {
+  color: #F06D61;
 }
 
 hr {
