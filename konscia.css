@@ -47,6 +47,13 @@ h3 {
   color: #444;
 }
 
+a.k-link-twitter {
+  font-size: 11px;
+  display: block;
+  float: right;
+  margin: 8px 0;
+}
+
 address {
   font-size: 14px;
   line-height: 1.47em;
@@ -184,6 +191,15 @@ hr {
   height: 7px;
   background: rgb(254,154,61);
   background: linear-gradient(90deg, rgba(254,154,61,1) 0%, rgba(116,39,71,1) 33%, rgba(56,118,29,1) 66%, rgba(11,83,148,1) 100%);
+  clear: bottom;
+  width: 100%;
+  overflow: auto;
+}
+
+hr::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 footer {
